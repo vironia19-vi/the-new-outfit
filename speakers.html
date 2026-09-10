@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/styles-w-T95Ss4.css" data-precedence="default" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&amp;family=Tajawal:wght@300;400;500;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+        data-precedence="default" />
+    <title>دليل المتكلمين 2026 — NEW OUTFIT</title>
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="description" content="دليل قابل للبحث لأكثر من 200 متكلم: الاسم، الكنيسة، رقم الهاتف، والمواضيع." />
+    <meta property="og:title" content="دليل المتكلمين 2026" />
+    <meta property="og:description" content="ابحث وفلتر أكتر من 200 متكلم حسب الموضوع أو الكنيسة." />
+    <link rel="modulepreload" href="./assets/index.js" />
+    <link rel="modulepreload" href="./assets/speakers.js" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <style>
+        @font-face {
+            font-family: 'CameraPlainVariable';
+            src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        #lovable-badge {
+            --badge-bg: #1b1b1b;
+            --badge-text: #c5c1b9;
+            --badge-text-hover: #dcdad5;
+            --badge-radius: 6px;
+            --badge-padding: 8px;
+            --badge-gap: 6px;
+            --badge-shadow:
+                0 0 0 1px rgba(0, 0, 0, 0.88),
+                0 1px 0 0 rgba(0, 0, 0, 0.04),
+                0 2px 2px -1px rgba(0, 0, 0, 0.08),
+                0 4px 4px -2px rgba(0, 0, 0, 0.08),
+                0 8px 8px -4px rgba(0, 0, 0, 0.08),
+                0 16px 16px -8px rgba(0, 0, 0, 0.08);
+            --badge-transition-duration: 0.2s;
+            --badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+            --focus-color: #575ECF;
+            --focus-offset: 2px;
+            --focus-width: 2px;
+
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            z-index: 1000000;
+            background-color: var(--badge-bg) !important;
+            color: var(--badge-text) !important;
+            border-radius: var(--badge-radius);
+            box-shadow: var(--badge-shadow) !important;
+            font-size: 12px;
+            font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 400 !important;
+            text-transform: none !important;
+            font-feature-settings: normal !important;
+            transform: translateZ(0);
+            will-change: transform, opacity;
+        }
+
+        #lovable-badge-cta {
+            display: flex;
+            align-items: center;
+            gap: var(--badge-gap);
+            padding: 0 var(--badge-padding);
+            height: 100%;
+            color: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+            transition:
+                background-color var(--badge-transition-duration) ease,
+                color var(--badge-transition-duration) ease,
+                transform 0.1s ease;
+        }
+
+        #lovable-badge-cta:hover {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--badge-text-hover);
+        }
+
+        #lovable-badge-cta:active {
+            transform: scale(0.98);
+        }
+
+        #lovable-badge-cta:focus {
+            outline: none;
+        }
+
+        #lovable-badge-cta:focus-visible {
+            outline: var(--focus-width) solid var(--focus-color);
+            outline-offset: var(--focus-offset);
+            z-index: 1;
+        }
+
+        #lovable-badge-text {
+            line-height: 1;
+        }
+
+        #lovable-badge-divider {
+            width: 1px;
+            height: 24px;
+            background-color: rgba(255, 255, 255, 0.04);
+            flex-shrink: 0;
+        }
+
+        #lovable-badge-close {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            min-height: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+            flex-shrink: 0;
+            transition:
+                background-color var(--badge-transition-duration) ease,
+                transform 0.1s ease;
+        }
+
+        #lovable-badge-close:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        #lovable-badge-close:active {
+            transform: scale(0.92);
+        }
+
+        #lovable-badge-close:focus {
+            outline: none;
+        }
+
+        #lovable-badge-close:focus-visible {
+            outline: var(--focus-width) solid var(--focus-color);
+            outline-offset: calc(var(--focus-offset) * -1);
+            z-index: 1;
+        }
+
+        #lovable-badge-close svg path {
+            fill: var(--badge-text);
+            transition: fill var(--badge-transition-duration) ease;
+        }
+
+        #lovable-badge-close:hover svg path {
+            fill: var(--badge-text-hover);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            #lovable-badge-cta,
+            #lovable-badge-close,
+            #lovable-badge-close svg path {
+                transition: none;
+            }
+
+            #lovable-badge-cta:active,
+            #lovable-badge-close:active {
+                transform: none;
+            }
+        }
+
+        @media (prefers-contrast: high) {
+            #lovable-badge {
+                --badge-bg: #000;
+                --badge-text: #fff;
+                --badge-text-hover: #fff;
+                border: 2px solid currentColor;
+            }
+
+            #lovable-badge-cta:focus-visible,
+            #lovable-badge-close:focus-visible {
+                outline-width: 3px;
+            }
+        }
+    </style>
+    <script defer src="./assets/flock.js" data-proxy-url="/~api/analytics"></script>
+    <meta name="twitter:title" content="دليل المتكلمين 2026">
+    <meta name="twitter:description" content="ابحث وفلتر أكتر من 200 متكلم حسب الموضوع أو الكنيسة.">
+    <meta property="og:image"
+        content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4ad0e468d255405532f317f4bdde27c0/id-preview-2746832a--507cbc8b-d3be-495e-a3ea-c76c1bf7ec19.lovable.app-1789054392761.png">
+    <meta name="twitter:image"
+        content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4ad0e468d255405532f317f4bdde27c0/id-preview-2746832a--507cbc8b-d3be-495e-a3ea-c76c1bf7ec19.lovable.app-1789054392761.png">
+</head>
+
+<body>
+    <div class="page-canvas">
+        <div class="relative z-10">
+            <header class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-6">
+                <div class="flex min-w-0 items-center gap-4"><a href="index.html"
+                        class="flex shrink-0 items-center gap-2"><span
+                            class="font-mono text-sm font-semibold tracking-[0.2em] text-foreground">NEW
+                            OUTFIT</span><span
+                            class="h-2 w-2 shrink-0 rounded-full bg-[oklch(0.55_0.13_250)]"></span></a>
+                    <nav class="hidden items-center gap-1 sm:flex"><a href="index.html"
+                            class="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground">البداية</a><a
+                            href="journey.html"
+                            class="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground">الرحلة</a><a
+                            class="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground bg-secondary text-foreground"
+                            href="speakers.html" data-status="active" aria-current="page">المتكلمين</a><a
+                            href="./hymns.html"
+                            class="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground">تسبيحنا</a><a
+                            href="stats.html"
+                            class="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground">إحصائيات</a>
+                    </nav>
+                </div><a href="./new-identity.html"
+                    class="shrink-0 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-[0_10px_30px_-15px_oklch(0.31_0.06_258)] transition hover:opacity-90">النهاية</a>
+            </header><!--$-->
+            <main class="mx-auto max-w-6xl px-5 pb-16">
+                <nav class="mx-auto flex max-w-6xl flex-wrap justify-center gap-2 px-5 pb-2 sm:hidden"><a
+                        href="./journey.html"
+                        class="rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium">الرحلة</a><a
+                        class="rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium bg-primary text-primary-foreground border-transparent"
+                        href="./speakers.html" data-status="active" aria-current="page">المتكلمين</a><a
+                        href="./hymns.html"
+                        class="rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium">تسبيحنا</a><a
+                        href="./stats.html"
+                        class="rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium">إحصائيات</a>
+                </nav>
+                <header class="py-8">
+                    <p class="font-mono text-xs tracking-[0.3em] text-muted-foreground">SPEAKERS DIRECTORY</p>
+                    <h1 class="font-display mt-3 text-3xl font-black sm:text-5xl">دليل المتكلمين</h1>
+                    <p class="mt-3 text-sm text-muted-foreground">201<!-- --> متكلم · <!-- -->35<!-- --> منهم بكنيسة
+                        مسجّلة</p>
+                </header>
+                <div class="surface sticky top-2 z-20 rounded-3xl p-4"><input
+                        placeholder="ابحث بالاسم، الكنيسة، الموضوع، أو الرقم…"
+                        class="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm outline-none transition focus:border-ring"
+                        value="" />
+                    <div class="mt-3 flex flex-wrap gap-2"><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-primary text-primary-foreground">الكل</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">روحيات</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">نفسية</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">دفاعيات</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">طقس</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">عقيدة</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">درس
+                            كتاب</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">شبابيات</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">تاريخ
+                            كنيسة</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">خدمة</button><button
+                            class="rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-secondary">أسرة</button>
+                    </div>
+                </div>
+                <p class="mt-5 text-xs text-muted-foreground">النتائج: <!-- -->201</p>
+                <ul class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. فادي ايمن</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->001</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. كيرلس سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->002</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. مرقص البراموسي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->003</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. متي بديع</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->004</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. انطونيوس رشدي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->005</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. يسطس منير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->006</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. باسيليوس حنا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->007</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء الزيتون</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. بيشوي بولس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->008</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. مرقس فوزي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->009</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. داود أدوار</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->010</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. موسي نبيل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->011</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. مرقس منير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->012</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. اثناسيوس يوسف</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->013</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. برثلماوس محروس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->014</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء وماريوحنا الحبيب</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بولا شفيق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->015</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نبيل زكي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->016</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. ادوارد جرجس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->017</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. يوحنا كمال</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->018</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. اشرف أنور بسكالس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->019</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اشرف وليم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->020</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مدحت منير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->021</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اكرامي حبيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->022</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. ماجدة شفيق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->023</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارمرقس المعادى</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اميرة كمال</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->024</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. مرقص إسحاق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->025</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. كمال سليمان</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->026</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. محسن ادوارد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->027</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. هاني سليمان</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->028</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. موسي مهني</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->029</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. نادر سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->030</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء والبابا كيرلس اغاخان</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. أسامة عشم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->031</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. مجدي إسحاق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->032</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ماجد سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->033</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. مكسيموس مجدي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->034</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. بيشوي وهبة</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->035</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. عبدالمسيج بسيط</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->036</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. ميخائيل عطية</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->037</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. بيشوي صبحي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->038</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. يوحنا ميلاد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->039</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. مكاريوس ميخائيل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->040</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. روفائيل ثروت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->041</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. انطونيوس عبده</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->042</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. بيشوي حلمي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->043</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. مرقس جرجس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->044</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">القس. يوحنا زكريا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->045</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نعيم نجيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->046</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. فيصل فؤاد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->047</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. عادل سليمان</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->048</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. عادل رشدي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->049</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. وصفي هنتر</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->050</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. سمير زكي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->051</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نيفين إبراهيم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->052</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بشري رمزي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->053</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. شيري صموئيل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->054</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. حابي جورج</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->055</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ماجد منصور</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->056</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. منير وهبة</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->057</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. صموئيل أنور</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->058</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. نبيل عدلي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->059</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. فايز سدراك</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->060</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اشرف جورج</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->061</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نادر لويس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->062</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. سامح بخيت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->063</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. هاني جرجس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->064</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. جيهان اسحق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->065</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. سمير سعد الله</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->066</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. اباكير منير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->067</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. تيموثاوس يونان</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->068</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. روفائيل سامي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->069</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">أبو سيفين مطار امبابة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. بولا عيسي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->070</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. مينا سامي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->071</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. شاروبيم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->072</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. لوقا ماهر</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->073</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. بيشوي رزق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->074</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. بيشوي نجيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->075</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارجرجس الحرفيين</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. جون</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->076</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. فيلوباتير نصر</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->077</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء عباسية الشرقية</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. استيفانوس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->078</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء الفجالة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. بهجت سمعان</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->079</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بولا مجدي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->080</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مجدي نجيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->081</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الانبا انطونيوس شبرا</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. زكريا فخوري</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->082</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. هاني ادوارد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->083</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ايمن يوسف</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->084</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارمرقس مصر الجديدة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ايمن ادوارد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->085</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د.م. حازم زكريا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->086</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارجرجس الظاهر</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مينيرفا سعد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->087</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الملاك حلوان</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مارك ناروز</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->088</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. مايكل سامي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->089</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. مينا مكين</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->090</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. هاني وليم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->091</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. هاني رضا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->092</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مفيد رمزى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->093</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. فادى القس صليب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->094</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. نيفين وهيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->095</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. رانيا مكرم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->096</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">ابو سيفين المهندسين</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. سامح رأفت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->097</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. شريف موريس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->098</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. سامى مترى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->099</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. كلير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->100</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. رافت واصف</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->101</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. فادى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->102</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. بيشوى رمزى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->103</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. سعيد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->104</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. رافت هنرى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->105</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. موريس وهيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->106</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. مايكل سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->107</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. عادل فوزى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->108</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. عصام توفيق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->109</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. زكريا عبد السيد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->110</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. كلير مجدى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->111</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء والملاك غبريال</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مايكل ممدوح</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->112</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. مريام</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->113</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اشرف وليم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->114</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نيفين ابراهيم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->115</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. محسن ادوارد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->116</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. ابراهيم ألبير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->117</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ميخائيل نبيل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->118</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. تونى قدرى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->119</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. أنطونيوس القمص هدرا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->120</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مينا سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->121</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. كيرلس القمص بيشوى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->122</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارجرجس منشية الصدر</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. وجيه القمص بيشوى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->123</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارجرجس كوتسيكا</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. مايكل فخرى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->124</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. عماد عبد الملاك</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->125</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">م. ميخائيل القس مينا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->126</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء ارض الجولف</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. رفيق سامى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->127</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. وجيه فوزى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->128</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. جوزيف فوزى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->129</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. جون جميل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->130</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مار جرجس حدايق حلوان</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. مينا مجدى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->131</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الاسقفية</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. عماد فرج</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->132</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">المرقسية القديمة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. يوسف جرجس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->133</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. عماد فؤاد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->134</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ميشيل موريس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->135</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نبيل شحاتة</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->136</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ييشوى فايز</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->137</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. مينا عزيز</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->138</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مجدى جرجس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->139</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ماجد ثروت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->140</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. نبيل نصرى</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->141</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اسامة شفيق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->142</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. تولى سعد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->143</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. زكرى وهيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->144</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اشرف فؤاد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->145</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. فليمون نبيل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->146</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مايكل فؤاد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->147</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الاسقفية</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. جون انطون</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->148</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. أمير تادرس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->149</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الاسقفية</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. عزت فايز</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->150</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مايكل جورج</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->151</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بيتريوسف</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->152</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الاسقفية</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. اسامة نعيم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->153</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. فادى فيليب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->154</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ابانوب منير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->155</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الاسنفية</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ربهام</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->156</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مار جرجس حدايق حلوان</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ماجد مكرم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->157</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">معهد الكتاب المقدس</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بطرس اسحاق</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->158</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">معهد الكتاب المقدس</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ناجى كمال</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->159</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ماجد جبران</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->160</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الايبارشة &quot;حلوان&quot;</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مريم حبيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->161</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ت. توتو ابراهيم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->162</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. اسحاق عطية</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->163</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مار جرجس حدايق حلوان</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. برسوم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->164</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العدرا وادى حوف</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. لوقا ماهر</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->165</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مار مرقس مصر الجديدة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. عادل الفونس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->166</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. بيشوى بولس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->167</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. داود</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->168</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. ارميا جمال</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->169</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. ماركي القمص</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->170</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. يوسف الحومي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->171</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ملاك عطا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->172</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->173</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. برسوم درياس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->174</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ميلاد</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->175</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. شنودة</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->176</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. يواقيم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->177</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. اندرو عاطف</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->178</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. مرقس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->179</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. موسي عبود</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->180</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. ميخائيل</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->181</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. مينا مجدي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->182</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. يسطس حشمت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->183</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ميلاد فتحي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->184</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. إبراهيم فهمي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->185</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مصر الجديدة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. امير بطرس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->186</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">مارجرجس ميدان التحرير</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. جورج عوض الله</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->187</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">دميانه بابا دبلو</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. سمير بشري</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->188</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">العذراء مسرة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بولا جورج</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->189</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بولا سمير</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->190</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بيتر فكري</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->191</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. بيتر كرم</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->192</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. جورج يحي</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->193</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. مينا هاني</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->194</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. ناصر حبيب</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->195</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. ارميا</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->196</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. لوكاس</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->197</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">د. بولا وجيه</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->198</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ا. يسري ثابت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->199</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. لوقا فايز</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->200</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                    <li><button class="surface w-full rounded-3xl p-4 text-start transition hover:-translate-y-0.5">
+                            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                                <h2 class="truncate text-sm font-bold">ابونا. مرقس رفعت</h2><span
+                                    class="font-mono shrink-0 text-[10px] text-muted-foreground">#<!-- -->201</span>
+                            </div>
+                            <p class="mt-1 truncate text-xs text-muted-foreground">الكنيسة غير مسجّلة</p>
+                        </button></li>
+                </ul>
+            </main>
+            <script>(function (a, f) { let l; try { l = JSON.parse(sessionStorage.getItem(a) || "{}") } catch { return } const n = l?.[f || history.state?.__TSR_key]; let c = !1; for (const t in n) { const e = n[t], o = e?.scrollX, s = e?.scrollY; if (Number.isFinite(o) && Number.isFinite(s)) { if (t === "window") scrollTo(o, s), c = !0; else if (t) try { const r = document.querySelector(t); r && (r.scrollLeft = o, r.scrollTop = s) } catch { } } } if (c) return; const i = location.hash.slice(1); if (i) { const t = history.state?.__hashScrollIntoViewOptions ?? !0; if (t) { const e = document.getElementById(i); e && e.scrollIntoView(t) } return } scrollTo(0, 0) })("tsr-scroll-restoration-v1_3"); document.currentScript.remove()</script>
+            <!--/$-->
+            <footer class="mx-auto max-w-6xl px-5 pb-10 pt-16 text-center text-xs text-muted-foreground">NEW OUTFIT ·
+                مشروع تخرج لجنة البرنامج · إعداد خدام الأسر الجامعية · تعالَ وانظر</footer>
+        </div>
+    </div>
+    <script class="$tsr"
+        id="$tsr-stream-barrier">(self.$R = self.$R || {})["tsr"] = []; self.$_TSR = { h() { this.hydrated = !0, this.c() }, e() { this.streamEnded = !0, this.c() }, c() { this.hydrated && this.streamEnded && (delete self.$_TSR, delete self.$R.tsr) }, p(e) { this.initialized ? e() : this.buffer.push(e) }, buffer: [] }; $_TSR.router = ($R => $R[0] = { manifest: $R[1] = { routes: $R[2] = { __root__: $R[3] = { preloads: $R[4] = ["./assets/index.js"], scripts: $R[5] = [$R[6] = { attrs: $R[7] = { type: "module", async: !0, src: "./assets/index.js" } }] }, "/speakers": $R[8] = { preloads: $R[9] = ["./assets/speakers.js"] } } }, matches: $R[10] = [$R[11] = { i: "__root__", u: 1789074063766, s: "success", ssr: !0 }, $R[12] = { i: "speakersspeakers", u: 1789074063766, s: "success", ssr: !0 }], lastMatchId: "speakersspeakers" })($R["tsr"]); $_TSR.e(); document.currentScript.remove()</script>
+    <script src="./assets/speakers-data.js"></script>
+    <script src="./assets/fix-speakers.js"></script>
+    <script>
+        // Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+        if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+            var badge = document.getElementById('lovable-badge');
+            if (badge) {
+                badge.style.display = 'none';
+            }
+        }
+
+        // Add click event listener to close button with animation
+        var closeButton = document.getElementById('lovable-badge-close');
+        if (closeButton) {
+            closeButton.addEventListener('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var badge = document.getElementById('lovable-badge');
+                if (badge) {
+                    badge.classList.add('closing');
+                    setTimeout(function () {
+                        if (badge) {
+                            badge.style.display = 'none';
+                        }
+                    }, 240);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
