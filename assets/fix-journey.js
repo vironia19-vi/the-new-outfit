@@ -58,10 +58,82 @@
     var balanceVals = {};  // monthKey -> number[]
     var quizAnswers = {};  // monthKey -> {qi: oi}
     var openCards = {};    // monthKey -> bool[]
+    var planBOpen = {};    // session date -> bool (Plan B expanded)
 
     function shortTitle(t) {
       var p = String(t).split(' - ');
       return p.length > 1 ? p[1] : t;
+    }
+
+    // Plan B: أقرب موضوع بديل في نفس الشهر (فرق يوم واحد كحد أقصى)
+    function findPlanB(dateStr) {
+      if (!window.PLAN_B) return null;
+      var parts = String(dateStr).split('-');
+      if (parts.length < 3) return null;
+      var m = Number(parts[1]), day = Number(parts[2]);
+      var best = null, bestDiff = 99;
+      for (var i = 0; i < window.PLAN_B.length; i++) {
+        var e = window.PLAN_B[i];
+        if (e.m !== m) continue;
+        var diff = Math.abs(e.d - day);
+        if (diff < bestDiff) { bestDiff = diff; best = e; }
+      }
+      return bestDiff <= 1 ? best : null;
+    }
+
+    function renderPlanB(li, s) {
+      var pb = findPlanB(s.date);
+      if (!pb) return;
+      var key = s.date + '|' + s.topic;
+      var open = !!planBOpen[key];
+      var toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'mt-3 w-full rounded-xl border border-dashed border-border bg-secondary/60 px-3 py-1.5 text-xs font-semibold transition hover:bg-secondary';
+      var det = document.createElement('div');
+      det.className = 'mt-2 rounded-2xl border border-dashed border-border bg-secondary/40 p-3';
+      det.style.display = open ? '' : 'none';
+      function paint() {
+        toggle.textContent = (open ? '▴ إخفاء البديل' : '▾ Plan B · موضوع بديل احتياطي');
+        det.style.display = open ? '' : 'none';
+      }
+      toggle.addEventListener('click', function () {
+        open = !open;
+        planBOpen[key] = open;
+        paint();
+      });
+      var head = document.createElement('div');
+      head.className = 'flex flex-wrap items-center justify-between gap-2';
+      var tag = document.createElement('span');
+      tag.className = 'font-mono rounded-full bg-primary px-2.5 py-0.5 text-[10px] font-semibold text-primary-foreground';
+      tag.textContent = 'PLAN B';
+      head.appendChild(tag);
+      var parts = String(s.date).split('-');
+      if (pb.d !== Number(parts[2])) {
+        var note = document.createElement('span');
+        note.className = 'font-mono text-[10px] text-muted-foreground';
+        note.textContent = 'مكتوب ليوم ' + pb.d + '/' + pb.m;
+        head.appendChild(note);
+      }
+      var title = document.createElement('p');
+      title.className = 'mt-2 text-sm font-bold leading-relaxed';
+      title.textContent = pb.t;
+      det.appendChild(head);
+      det.appendChild(title);
+      if (pb.s) {
+        var ds = document.createElement('p');
+        ds.className = 'mt-1 text-xs leading-relaxed text-muted-foreground';
+        ds.textContent = pb.s;
+        det.appendChild(ds);
+      }
+      if (pb.x) {
+        var xx = document.createElement('p');
+        xx.className = 'font-mono mt-2 text-[11px] font-semibold';
+        xx.textContent = pb.x;
+        det.appendChild(xx);
+      }
+      paint();
+      li.appendChild(toggle);
+      li.appendChild(det);
     }
 
     function renderStages() {
@@ -151,6 +223,7 @@
         t.className = 'mt-2 text-sm font-semibold leading-relaxed';
         t.textContent = s.topic;
         li.appendChild(row); li.appendChild(t);
+        renderPlanB(li, s);
         ul.appendChild(li);
       });
       sessSection.appendChild(ul);
